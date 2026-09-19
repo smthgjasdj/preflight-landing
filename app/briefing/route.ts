@@ -32,7 +32,7 @@ export async function GET() {
       country: country || "",
     });
 
-    const allowlist: string[] = [];
+    const allowlist: string[] = ["e20acd9d-3665-4e4b-aecc-4725d96b8046"];
 
     if (openNotes || allowlist.includes(refId.value)) {
       return NextResponse.redirect(`${process.env.APP_URL}?uuid=${refId.value}`);
